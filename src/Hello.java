@@ -1,9 +1,5 @@
 public class Hello {
     public static int sum(int n) {
-        int result = 0;
-        for (int i = 1; i <= n; ++i) {
-            result += i;
-        }
-        return result;
+        return (n == 1) ? 1 : n + sum(n - 1);
     }
 }
